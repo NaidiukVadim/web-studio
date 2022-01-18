@@ -1,0 +1,148 @@
+@import "variables";
+@import "mixins";
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    nav {
+        justify-self: end;
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 30px;
+            list-style: none;
+
+            a {
+                @include linkStyle(Inter, 18px, medium, none, $grey-color);
+
+                &:hover {
+                    color: black;
+                    text-decoration: underline;
+                    text-decoration-color: $yellow-color;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+/*INTRODUCE*/
+.main-introduce {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 760px;
+
+    &-info {
+        .introduce-title {
+            @include fontStyle ("Playfair Display", 70px, bold, black);
+        }
+
+        .introduce-desc {
+            @include fontStyle (Inter, 24px, 600, #202336);
+        }
+
+        .introduce-link {
+            background-color: $yellow-color;
+            padding: 5px 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px $grey-color;
+            @include linkStyle ("Playfair Display", 26px, bold, none, #fff);
+        }
+    }
+}
+/*WEB-STUDIO*/
+.main-subtitle {
+    @include fontStyle ("Playfair Display", 36px, bold, black);
+}
+
+.web-studio-info {
+    @include fontStyle (Inter, 18px, medium, $main-text-color);
+    line-height: 30px;
+}
+
+.web-studio-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+
+/*WEB-STUDIO-HISTORY*/
+.web-studio-history {
+    .history-container {
+        padding-left: 30px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        .history-line {
+            padding-right: 30px
+        }
+
+        .history-title {
+            @include fontStyle (Inter, 24px, bold, $main-text-color);
+            line-height: 25px;
+        }
+            
+        .web-studio-develop {
+            display: grid;
+            grid-template-columns: 1fr 343px;  
+            column-gap: 40px; 
+        }
+        
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color: #DAF1E9;
+    padding: 20px;
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 30px;
+
+        .footer-copyright {
+            @include fontStyle (Mulish, 18px, light, $footer-link-color);
+        }
+
+        .footer-main-link {
+            @include linkStyle ("Playfair Display", 19px, regular, none, black);
+            padding-left: 36px;
+        }
+
+        .footer-list-link {
+            list-style: none;
+            a {
+                @include linkStyle (Mulish, 18px, light, none, $footer-link-color);
+                line-height: 30px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /*.SOCIALS*/
+    .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(5, 22px);
+        column-gap: 30px;
+        justify-content: center;
+        align-items: end;
+
+        a {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

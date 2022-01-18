@@ -1,0 +1,203 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*HEADER*/
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+header nav {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+header nav .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  list-style: none;
+}
+
+header nav .menu a {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: medium;
+  text-decoration: none;
+  color: #ABAEB5;
+}
+
+header nav .menu a:hover {
+  color: black;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F6A410;
+          text-decoration-color: #F6A410;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*INTRODUCE*/
+.main-introduce {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 760px;
+      grid-template-columns: 1fr 760px;
+}
+
+.main-introduce-info .introduce-title {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+
+.main-introduce-info .introduce-desc {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  color: #202336;
+}
+
+.main-introduce-info .introduce-link {
+  background-color: #F6A410;
+  padding: 5px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #ABAEB5;
+          box-shadow: 5px 5px 5px #ABAEB5;
+  font-family: "Playfair Display";
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*WEB-STUDIO*/
+.main-subtitle {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+.web-studio-info {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: medium;
+  color: #333333;
+  line-height: 30px;
+}
+
+.web-studio-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+
+/*WEB-STUDIO-HISTORY*/
+.web-studio-history .history-container {
+  padding-left: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.web-studio-history .history-container .history-line {
+  padding-right: 30px;
+}
+
+.web-studio-history .history-container .history-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 25px;
+}
+
+.web-studio-history .history-container .web-studio-develop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 343px;
+      grid-template-columns: 1fr 343px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #DAF1E9;
+  padding: 20px;
+  /*.SOCIALS*/
+}
+
+footer .footer-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+footer .footer-main .footer-copyright {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: light;
+  color: #717171;
+}
+
+footer .footer-main .footer-main-link {
+  font-family: "Playfair Display";
+  font-size: 19px;
+  font-weight: regular;
+  text-decoration: none;
+  color: black;
+  padding-left: 36px;
+}
+
+footer .footer-main .footer-list-link {
+  list-style: none;
+}
+
+footer .footer-main .footer-list-link a {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: light;
+  text-decoration: none;
+  color: #717171;
+  line-height: 30px;
+}
+
+footer .footer-main .footer-list-link a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (22px)[5];
+      grid-template-columns: repeat(5, 22px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+footer .footer-socials a {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

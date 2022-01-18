@@ -1,0 +1,411 @@
+@charset "UTF-8";
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main-subtitle {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+}
+
+.main-text-info {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: medium;
+  color: #333333;
+  line-height: 30px;
+}
+
+/*HEADER*/
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+header nav {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+header nav .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  list-style: none;
+}
+
+header nav .menu a {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: medium;
+  text-decoration: none;
+  color: #ABAEB5;
+}
+
+header nav .menu a:hover {
+  color: black;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F6A410;
+          text-decoration-color: #F6A410;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*INTRODUCE*/
+.main-introduce {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 760px;
+      grid-template-columns: 1fr 760px;
+}
+
+.main-introduce-info .introduce-title {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+
+.main-introduce-info .introduce-desc {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  color: #202336;
+}
+
+.main-introduce-info .introduce-link {
+  background-color: #F6A410;
+  padding: 5px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px #ABAEB5;
+          box-shadow: 5px 5px 5px #ABAEB5;
+  font-family: "Playfair Display";
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*SCRUM*/
+.main-scrum {
+  margin-top: 50px;
+}
+
+.main-scrum .main-scrum-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 426px 1fr;
+      grid-template-columns: 426px 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.main-scrum .main-scrum-container img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-history {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  -webkit-box-shadow: 2px 2px 2px 2px #ABAEB5;
+          box-shadow: 2px 2px 2px 2px #ABAEB5;
+  padding: 10px;
+}
+
+.main-history .main-history-container {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-history .main-history-container .history-title {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  color: #6A6A6A;
+}
+
+.main-history .history-title-text {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  color: #6A6A6A;
+  line-height: 25px;
+}
+
+/*КОНЦЕПЦІЯ СКРАМ МЕТОДОЛОГІЇ*/
+.scrum-method-container {
+  margin-top: 50px;
+}
+
+.scrum-method-container h2 {
+  text-align: center;
+}
+
+.scrum-method-container .scrum-method-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 365px 250px;
+      grid-template-columns: 250px 365px 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
+}
+
+.scrum-method-container .scrum-method-items .scrum-item {
+  height: 365px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px 2px #ABAEB5;
+          box-shadow: 2px 2px 2px 2px #ABAEB5;
+}
+
+.scrum-method-container .scrum-method-items .scrum-item img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.scrum-method-container .scrum-method-items .scrum-item .principle-title {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.scrum-method-container .scrum-method-items .scrum-item ul {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.scrum-method-container .scrum-method-items .scrum-item .scrum-link {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #F6A410;
+  display: block;
+  width: 139px;
+  height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.scrum-method-container .scrum-method-items .role {
+  background-color: #DAF1E9;
+}
+
+.scrum-method-container .scrum-method-items .practice {
+  background-color: #FFE767;
+}
+
+.scrum-method-container .scrum-method-items .documents {
+  background-color: #DAF1E9;
+}
+
+/*HOW IT WORKS?*/
+.how-it-works {
+  margin-top: 50px;
+}
+
+.how-it-works h2 {
+  font-size: 26px;
+}
+
+.how-it-works img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*KANBAN*/
+.kanban-main {
+  margin-top: 50px;
+}
+
+.kanban-main .kanban-main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 430px;
+      grid-template-columns: 1fr 430px;
+}
+
+/*ПОРІВНЯЛЬНА ХАРАКТЕРИСТИКА*/
+.characteristic-main {
+  margin-top: 50px;
+}
+
+.characteristic-main .main-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.characteristic-main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 336px 346px 336px;
+      grid-template-columns: 336px 346px 336px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.characteristic-main-container .characterictic-bg img {
+  position: relative;
+}
+
+.characteristic-main-container .characterictic-bg p {
+  position: relative;
+  bottom: 120px;
+  left: 110px;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+
+.characteristic-main-container .characterictic-scrum-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: (auto)[5];
+      grid-template-rows: repeat(5, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-left: 30px;
+  margin-top: -100px;
+}
+
+.characteristic-main-container .characterictic-scrum-items p {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.characteristic-main-container .characterictic-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*SCRAMBAN*/
+.scrumban-main {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 425px 1fr;
+      grid-template-columns: 425px 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrumban-main img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #DAF1E9;
+  padding: 20px;
+  /*.SOCIALS*/
+}
+
+footer .footer-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+footer .footer-main .footer-copyright {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: light;
+  color: #717171;
+}
+
+footer .footer-main .footer-main-link {
+  font-family: "Playfair Display";
+  font-size: 19px;
+  font-weight: regular;
+  text-decoration: none;
+  color: black;
+  padding-left: 36px;
+}
+
+footer .footer-main .footer-list-link {
+  list-style: none;
+}
+
+footer .footer-main .footer-list-link a {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: light;
+  text-decoration: none;
+  color: #717171;
+  line-height: 30px;
+}
+
+footer .footer-main .footer-list-link a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (22px)[5];
+      grid-template-columns: repeat(5, 22px);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+footer .footer-socials a {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=method.css.map */

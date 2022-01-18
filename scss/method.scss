@@ -1,0 +1,300 @@
+@import "variables";
+@import "mixins";
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-subtitle {
+    @include fontStyle ("Playfair Display", 36px, bold, black);
+}
+
+.main-text-info {
+    @include fontStyle (Inter, 18px, medium, $main-text-color);
+    line-height: 30px;
+}
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    nav {
+        justify-self: end;
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 30px;
+            list-style: none;
+
+            a {
+                @include linkStyle(Inter, 18px, medium, none, $grey-color);
+
+                &:hover {
+                    color: black;
+                    text-decoration: underline;
+                    text-decoration-color: $yellow-color;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+/*INTRODUCE*/
+.main-introduce {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 760px;
+
+    &-info {
+        .introduce-title {
+            @include fontStyle ("Playfair Display", 70px, bold, black);
+        }
+
+        .introduce-desc {
+            @include fontStyle (Inter, 24px, 600, #202336);
+        }
+
+        .introduce-link {
+            background-color: $yellow-color;
+            padding: 5px 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px $grey-color;
+            @include linkStyle ("Playfair Display", 26px, bold, none, #fff);
+        }
+    }
+}
+
+/*SCRUM*/
+.main-scrum {
+    margin-top: 50px;
+
+    .main-scrum-container {
+        display: grid;
+        grid-template-columns: 426px 1fr;
+        column-gap: 30px;
+
+        img {
+            align-self: center;
+        }
+    }
+}
+
+.main-history {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 25px;
+    box-shadow: 2px 2px 2px 2px $grey-color;
+    padding: 10px;
+
+    .main-history-container {
+        text-align: center;
+        align-self: center;
+
+        .history-title {
+            @include fontStyle ($main-font, 14px, regular, #6A6A6A);
+        }
+    }
+
+    .history-title-text {
+        @include fontStyle ($main-font, 14px, regular, #6A6A6A);
+        line-height: 25px;
+    }
+}
+
+/*КОНЦЕПЦІЯ СКРАМ МЕТОДОЛОГІЇ*/
+.scrum-method-container {
+    margin-top: 50px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .scrum-method-items {
+        display: grid;
+        grid-template-columns: 250px 365px 250px;
+        justify-content: center;
+        column-gap: 80px;
+
+        .scrum-item {
+            height: 365px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px 2px $grey-color;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                padding-top: 40px;
+            }
+
+            .principle-title {
+                @include fontStyle ("Playfair Display", 20px, bold, black);
+                text-align: center;
+            }
+
+            ul {
+                @include fontStyle ($main-font, 18px, 500, $main-text-color);
+            }
+
+            .scrum-link {
+                @include linkStyle ($accent-font, 16px, bold, none, white);
+                background-color: $yellow-color;
+                display: block;
+                width: 139px;
+                height: 45px;
+                text-align: center;
+                border-radius: 10px;
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+            
+        }
+
+        .role {
+            background-color: #DAF1E9;
+        }
+
+        .practice {
+            background-color: #FFE767;
+        }
+
+        .documents {
+            background-color: #DAF1E9;
+        }
+    }
+}
+
+/*HOW IT WORKS?*/
+.how-it-works {
+    margin-top: 50px;
+
+    h2 {
+        font-size: 26px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/*KANBAN*/
+.kanban-main {
+    margin-top: 50px;
+    .kanban-main-container {
+        display: grid;
+        grid-template-columns: 1fr 430px;
+    }
+}
+
+/*ПОРІВНЯЛЬНА ХАРАКТЕРИСТИКА*/
+.characteristic-main {
+    margin-top: 50px;
+    
+    .main-subtitle {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &-container {
+        display: grid;
+        grid-template-columns: 336px 346px 336px;
+        justify-content: center;
+        column-gap: 50px;
+
+        .characterictic-bg {
+            img {
+                position: relative;
+            }
+            p {
+                position: relative;
+                bottom: 120px;
+                left: 110px;
+                text-transform: uppercase;
+                @include fontStyle ($main-font, 32px, 400, white);
+            }
+        }
+
+        .characterictic-scrum-items {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: repeat(5, auto);
+            align-items: center;
+            column-gap: 10px;
+            margin-left: 30px;
+            margin-top: -100px;
+
+            p {
+                @include fontStyle ($main-font, 18px, bold, $main-text-color);
+            }
+        }
+
+        .characterictic-img {
+            align-self: center;
+        }
+    }
+}
+
+/*SCRAMBAN*/
+.scrumban-main {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 425px 1fr;
+    column-gap: 30px;
+    justify-content: center;
+
+    img {
+        align-self: center;
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color: #DAF1E9;
+    padding: 20px;
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 30px;
+
+        .footer-copyright {
+            @include fontStyle (Mulish, 18px, light, $footer-link-color);
+        }
+
+        .footer-main-link {
+            @include linkStyle ("Playfair Display", 19px, regular, none, black);
+            padding-left: 36px;
+        }
+
+        .footer-list-link {
+            list-style: none;
+            a {
+                @include linkStyle (Mulish, 18px, light, none, $footer-link-color);
+                line-height: 30px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /*.SOCIALS*/
+    .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(5, 22px);
+        column-gap: 30px;
+        justify-content: center;
+        align-items: end;
+
+        a {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
